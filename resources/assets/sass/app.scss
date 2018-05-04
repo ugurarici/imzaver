@@ -11,14 +11,20 @@
 @import '~bootstrap-select/dist/css/bootstrap-select.min.css';
 
 @include media-breakpoint-up(lg) {
-  .fs1vw {
-    font-size: 1vw;
-  }
+	.fs1vw {
+		font-size: 1vw;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	body {
+		margin-bottom: 60px;
+	}
 }
 
 .navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 nav.bread{
