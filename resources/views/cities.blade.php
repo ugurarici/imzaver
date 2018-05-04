@@ -2,6 +2,8 @@
 
 @section('title', 'İlçe Seçim Kurulları')
 
+@section('meta_description', 'İlçe Seçim Kurulları iletişim bilgileri, telefonları, adresleri. Cumhurbaşkanlığı adaylarına imza vermek için bağlı bulunduğunuz seçim kurulunun iletişim bilgilerini bulun')
+
 @section('content')
 <div class="jumbotron p-3 text-center">
 	<div class="container">

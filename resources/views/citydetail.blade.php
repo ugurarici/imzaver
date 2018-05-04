@@ -2,6 +2,8 @@
 
 @section('title', $city->name . ' İlçe Seçim Kurulları')
 
+@section('meta_description', $city->name . ' ilçe seçim kurulları adresleri ve telefonları. ' . $city->name . ' tüm ilçe seçim kurulları iletişim bilgileri.')
+
 @section('content')
 <div class="jumbotron p-3 text-center">
 	<div class="container">
