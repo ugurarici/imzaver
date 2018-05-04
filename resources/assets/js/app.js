@@ -5,9 +5,25 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+ window.$ = window.jQuery = require('jquery');
 
-window.Vue = require('vue');
+ require('./bootstrap');
+
+ require('bootstrap-select');
+
+ $(document).ready(function(){
+ 	$('.selectpicker').selectpicker({
+ 		style: 'btn-danger btn-lg',
+ 		size: 4,
+ 		language: 'TR'
+ 	});
+
+ 	$('#allCountiesSelect').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+		window.location = $(this).val();
+ 	});
+ });
+
+// window.Vue = require('vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,8 +31,8 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
+// const app = new Vue({
+//     el: '#app'
+// });

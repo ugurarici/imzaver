@@ -12,10 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('ilce-secim-kurullari', 'OfficeController@main')->name('allOffices');
-Route::get('ilce-secim-kurullari/{city}', 'OfficeController@city')->name('cityOffices');
-Route::get('ilce-secim-kurullari/{city}/{county}', 'OfficeController@county')->name('countyOffices');
 Route::get('ilce-secim-kurullari/{city}/{county}/{office}', 'OfficeController@office')->name('officeDetail');
+Route::get('ilce-secim-kurullari/{city}/{county}', 'OfficeController@county')->name('countyOffices');
+Route::get('ilce-secim-kurullari/{city}', 'OfficeController@cityDetail')->name('cityOffices');
+Route::get('ilce-secim-kurullari', 'OfficeController@main')->name('allOffices');
+
+
+

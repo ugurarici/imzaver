@@ -1,14 +1,30 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
 @import "variables";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import '~open-iconic/font/css/open-iconic-bootstrap.scss';
+@import '~bootstrap-select/dist/css/bootstrap-select.min.css';
+
+@include media-breakpoint-up(lg) {
+  .fs1vw {
+    font-size: 1vw;
+  }
+}
 
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+nav.bread{
+	display: inline-block;
+}
+
+#navbar-brand{
+	color: $primary !important;
 }

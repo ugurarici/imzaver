@@ -24,6 +24,7 @@ class CreateOfficesTable extends Migration
             $table->string('coordinates')->nullable();
             $table->text('formatted_address')->nullable();
             $table->string('gmaps_place_id')->nullable();
+            $table->boolean('is_checked')->default(false);
             $table->timestamps();
         });
     }

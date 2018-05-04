@@ -15,4 +15,9 @@ class County extends Model
     {
     	return $this->hasMany(Office::class);
     }
+
+    public function getRouteKeyName()
+	{
+		return 'slug';
+	}
 }
