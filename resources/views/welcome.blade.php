@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>İmza Ver</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -16,7 +16,7 @@
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
-                font-weight: 100;
+                /*font-weight: 100;*/
                 height: 100vh;
                 margin: 0;
             }
@@ -79,15 +79,23 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <small>demokrasi için</small>
+                    <br>
+                    İMZA VER
+                </div>
+                <div>
+                    <p>
+                        24 Haziran seçimleri için 4 isim "seçmenler tarafından aday gösterilebilir" durumda.
+                    </p>
+                    <p>
+                        Daha demokratik bir seçim için bağlı bulunduğun ilçe seçim kuruluna git ve <strong>imza ver!</strong>
+                    </p>
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/ilce-secim-kurullari">İlçe Seçim Kurulları</a>
+                    <a href="/nasil-imza-veririm">Nasıl İmza Veririm?</a>
+                    <a href="/adaylar">Adaylar</a>
                 </div>
             </div>
         </div>
