@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('api/ilce-secim-kurullari/{city}/{county}/{office}', 'OfficeApiController@office')->name('officeDetail');
+Route::get('api/ilce-secim-kurullari/{city}/{county}', 'OfficeApiController@county')->name('countyOffices');
+Route::get('api/ilce-secim-kurullari/{city}', 'OfficeApiController@cityDetail')->name('cityOffices');
+Route::get('api/ilce-secim-kurullari', 'OfficeApiController@main')->name('allOffices');
