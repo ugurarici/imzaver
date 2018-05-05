@@ -49,6 +49,12 @@
 		</nav>
 	</header>
 	@yield('content')
+	<div class="container">
+		<blockquote class="blockquote my-4 text-center">
+			<p class="mb-0">Politika ile uğraşmayacak kadar akıllı olanlar, daha aptallar tarafından yönetilerek cezalandırılırlar.</p>
+			<footer class="blockquote-footer">Eflatun</footer>
+		</blockquote>
+	</div>
 	<script type="text/javascript" charset="utf-8" src="{{ mix('js/app.js') }}"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33209245-8"></script>
