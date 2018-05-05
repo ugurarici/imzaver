@@ -14,24 +14,25 @@ class OfficeApiController extends Controller
 	*/
 	public function main(Request $request)
 	{
-		$cities = City::all();
-		return compact('cities');
+		return City::all();
 	}
 
-	public function cityDetail(Request $request, City $city)
+	public function cityDetail(Request $request, $cityId)
 	{
-		$city = City::where('id', $city->id)->with(['counties', 'offices'])->first();
-		return compact('city');
+		$city = City::where('id', $cityId)->with(['counties', 'offices'])->first();
+		return $city;
 	}
 
-	public function county(Request $request, City $city, County $county)
+	public function county(Request $request, $cityId, $countyId)
 	{
-		return  compact('city','county');
+		$county = County::where('id', $countyId)->first();
+		return  $county;
 	}
 
-	public function office(Request $request, City $city, County $county, Office $office)
+	public function office(Request $request, $cityId, $countyId, $officeId)
 	{
-
+		$office = Office::where('id', $officeId)->first();
+		return $office;
 	}
 
 }
