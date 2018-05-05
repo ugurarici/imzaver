@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('api/ilce-secim-kurullari/{city}/{county}/{office}', 'OfficeApiController@office');
+Route::get('api/ilce-secim-kurullari/{city}/{county}', 'OfficeApiController@county');
+Route::get('api/ilce-secim-kurullari/{city}', 'OfficeApiController@cityDetail');
+Route::get('api/ilce-secim-kurullari', 'OfficeApiController@main');
+
+
 Route::get('ilce-secim-kurullari/{city}/{county}/{office}', 'OfficeController@office')->name('officeDetail');
 Route::get('ilce-secim-kurullari/{city}/{county}', 'OfficeController@county')->name('countyOffices');
 Route::get('ilce-secim-kurullari/{city}', 'OfficeController@cityDetail')->name('cityOffices');
